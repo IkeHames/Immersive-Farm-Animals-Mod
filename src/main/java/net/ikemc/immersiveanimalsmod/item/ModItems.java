@@ -13,6 +13,13 @@ public class ModItems {
 
     public static final RegistryObject<Item> BULLSPAWNEGG = ITEMS.register("bullspawnegg",
             () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> RAMSPAWNEGG = ITEMS.register("ramspawnegg",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> ROOSTERSPAWNEGG = ITEMS.register("roosterspawnegg",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> BOARSPAWNEGG = ITEMS.register("boarspawnegg",
+            () -> new Item(new Item.Properties()));
+
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

@@ -1,3 +1,8 @@
 {
-  "item.immersiveanimalsmod.bullspawnegg": "Bull Spawn Egg"
+  "item.immersiveanimalsmod.bullspawnegg": "Bull Spawn Egg",
+  "item.immersiveanimalsmod.ramspawnegg": "Ram Spawn Egg",
+  "item.immersiveanimalsmod.roosterspawnegg": "Rooster Spawn Egg",
+  "item.immersiveanimalsmod.boarspawnegg": "Boar Spawn Egg",
+
+  "creativetab.immersive_animals": "Immersive Animals Spawn Eggs"
 }

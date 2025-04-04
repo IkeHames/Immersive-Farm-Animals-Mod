@@ -1,6 +1,7 @@
 package net.ikemc.immersiveanimalsmod;
 
 import com.mojang.logging.LogUtils;
+import net.ikemc.immersiveanimalsmod.item.ModCreativeModeTabs;
 import net.ikemc.immersiveanimalsmod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -36,6 +37,8 @@ public class ImmersiveAnimalsMod
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
 
+        ModCreativeModeTabs.register(modEventBus);
+
         ModItems.register(modEventBus);
 
         // Register the item to a creative tab
@@ -54,6 +57,9 @@ public class ImmersiveAnimalsMod
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.SPAWN_EGGS){
             event.accept(ModItems.BULLSPAWNEGG);
+            event.accept(ModItems.RAMSPAWNEGG);
+            event.accept(ModItems.ROOSTERSPAWNEGG);
+            event.accept(ModItems.BOARSPAWNEGG);
         }
     }
 
