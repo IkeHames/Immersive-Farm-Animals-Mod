@@ -1,9 +1,9 @@
 package net.ikemc.immersiveanimalsmod;
 
 import com.mojang.logging.LogUtils;
+import net.ikemc.immersiveanimalsmod.block.ModBlocks;
 import net.ikemc.immersiveanimalsmod.item.ModCreativeModeTabs;
 import net.ikemc.immersiveanimalsmod.item.ModItems;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -40,6 +40,8 @@ public class ImmersiveAnimalsMod
         ModCreativeModeTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
+
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -61,6 +63,8 @@ public class ImmersiveAnimalsMod
             event.accept(ModItems.ROOSTERSPAWNEGG);
             event.accept(ModItems.BOARSPAWNEGG);
         }
+
+
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call

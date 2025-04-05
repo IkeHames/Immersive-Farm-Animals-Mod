@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "immersiveanimalsmod:block/woodenfeeder"
+    },
+    "facing=south": {
+      "model": "immersiveanimalsmod:block/woodenfeeder",
+      "y": 180
+    },
+    "facing=east": {
+      "model": "immersiveanimalsmod:block/woodenfeeder",
+      "y": 90
+    },
+    "facing=west": {
+      "model": "immersiveanimalsmod:block/woodenfeeder",
+      "y": 270
+    }
+  }
+}

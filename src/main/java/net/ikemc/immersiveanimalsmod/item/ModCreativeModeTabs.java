@@ -1,6 +1,7 @@
 package net.ikemc.immersiveanimalsmod.item;
 
 import net.ikemc.immersiveanimalsmod.ImmersiveAnimalsMod;
+import net.ikemc.immersiveanimalsmod.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -22,6 +23,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.BOARSPAWNEGG.get());
                         output.accept(ModItems.ROOSTERSPAWNEGG.get());
                         output.accept(ModItems.BULLSPAWNEGG.get());
+                        output.accept(ModBlocks.WOODENFEEDER.get());
 
 
                     }).build());
